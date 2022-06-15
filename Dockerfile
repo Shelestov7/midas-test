@@ -1,6 +1,6 @@
 FROM golang:1.18 as builder
 
-WORKDIR /test
+WORKDIR /midas
 
 COPY . ./
 

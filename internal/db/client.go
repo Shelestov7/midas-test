@@ -26,7 +26,7 @@ func InitDBCConnection(ctx context.Context, pgConfig *pgxpool.Config) (*pgxpool.
 }
 
 func ConfigureDBConnection(ctx context.Context) *pgxpool.Config {
-	pgConf, err := pgxpool.ParseConfig("postgres://postgres:password@127.0.0.1:8081/midasinvestment")
+	pgConf, err := pgxpool.ParseConfig("postgres://postgres:password@172.17.0.1:8081/midasinvestment")
 	if err != nil {
 		panic(err)
 	}
